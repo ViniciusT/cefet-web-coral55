@@ -1,9 +1,11 @@
 /* Importa o arquivo CSS que importa a fonte Ravie */
 @import "fonts/ravie.css";
-
+body{
+    margin: 0;
+}
 #cabecalho{
     text-align: right;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 #cabecalho h1{
     font-family: Ravie;
@@ -24,12 +26,13 @@
     color: #d027aa;
 }
 #cardapio{
+    line-height: 40px;
     font-family: Verdana;
     font-size: 14px;
-    padding: 20px 15px;
+    padding: 20px 15px 45px 15px;
     color: #333;
-    width: 646px;
-    border: 1px #aac0ae;
+    width: 614px;
+    border: 1px solid #aac0ae;
     margin-left: 154px;
     background-color: rgba(255 ,255, 255,0.2);
 
@@ -45,22 +48,29 @@
 
 #recipiente{
     width: 800px;
+    height: 825px;
     margin: auto;
     background-image: linear-gradient(to bottom, #f6f1b2, #4599b2);
 }
 #lateral{
     position: absolute;
     width: 154px;
+    height: 700px;
 }
 #lateral h2{
+    position: absolute;
+    top: 165px;
     font-size: 48px;
+    right: -36px;
     font-family: Verdana;
     transform: rotate(-90deg);
 }
 #ticket{
     /* ... */
     left: -100px;
-    transition: left 100ms ease-out; /* propriedade, duração, interpolação */
+    transition: left 100ms ease-out;
+    position: absolute;
+    top: 300px; /* propriedade, duração, interpolação */
 }
 
 #ticket:hover {
@@ -68,12 +78,23 @@
 }
 #rodape{
     float: right;
+    padding: 46px 15px 25px 0;
 }
 #cardapio>div{
     line-height: 25px;
 }
 #siri{
     position: absolute;
-    top: -90px;
-    left: -15px;
+    top: -110px;
+    left: -20px;
+}
+#peixe{
+    position: absolute;
+    bottom: 0px;
+    left: -50px;
+}
+#bolha{
+    position: absolute;
+    bottom: 135px;
+    left: 32px;
 }
